@@ -6,7 +6,7 @@ pipeline {
                sh 'export M2_HOME=/opt/apache-maven'
                sh 'export PATH=$PATH:$M2_HOME/bin'
                sh 'mvn --version'
-               sh 'mvn clean package'
+              /* sh 'mvn clean package'*/
             }
             post {
                 success {
