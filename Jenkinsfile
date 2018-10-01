@@ -7,7 +7,7 @@ pipeline {
                sh 'export PATH=$PATH:$M2_HOME/bin'
                sh 'mvn --version'*/
                sh 'echo $M2_HOME'
-              /* sh 'mvn clean package'*/
+               sh 'mvn clean compile'
             }
             post {
                 success {
