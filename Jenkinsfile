@@ -7,7 +7,7 @@ pipeline {
                sh 'export PATH=$PATH:$M2_HOME/bin'
                sh 'mvn --version'*/
                sh '''
-               echo "$M2_HOME = $(M2_HOME)"
+               echo "M2_HOME = ${M2_HOME}"
                mvn clean compile
                '''
             }
